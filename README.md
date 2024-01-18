@@ -31,5 +31,19 @@ https://www.scriptslug.com/script/dune-2021
 This file loads in the screenplays from the data folder. Beyond loading in the texts, this script also prepares each text to be tokenized. All text is converted to lowercase. Each token is stripped of punctuation (save hyphens). Any numbering associated with the structure of the screenplay was removed as well. The tokens were separated by white space. In the screenplay for The Force Awakens,  certain word's and phrases were replaced to represent strong parallels often made by disgruntled fans:
 
 -Any reference to "Starkiller Base" is replaced with "Death Star"
+
 -Any reference to "Jakku" is replaced with "Tatooine"
+
 -Any reference to "Maz's Castle" is replaced with "Mos Eisley"
+
+## keyness_tables.R
+
+This file takes the loaded scripts and generates keyness tables to compare the three pairings of screenplays. The keyness values (log-likelihoods) and effect sizes (log ratios) are compared to search for trends. Each keyness table shows the tokens with the highest log-likelihood values which communicates that the tokens present have little association with tokens from the paired screenplay.
+
+## collocation_networks.R
+
+This file is used to generate collocation network visualizations. Collocation networks are made comparing the protagonists of each paired film. The main protagonist of both Dune films is paul. The main protagonist of both Indiana Jones films is indiana. The protagonist of The Force Awakens is rey and the protagonist of A New Hope is luke. While the Star Wars protagonists are named differently, these two characters are associated with have similar arcs. Each film's collocation network's minimum frequency is adjusted to make the visualizations of the networks comparable. Regardless, all MI scores used to make connections are the same.
+
+# R Packages
+
+The packages required for these files are tidyverse, quanteda, quanteda.textstats, and ggraph. Additionnally, functions for the collocation networks were written by David Brown and can be accessed as packages using devtools via his GitHub.
