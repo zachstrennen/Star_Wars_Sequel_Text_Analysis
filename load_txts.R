@@ -1,19 +1,3 @@
-# https://maddogmovies.com/almost/scripts/starwars_fourth3_76.pdf
-
-# http://galactic-voyage.com/Star%20Wars-The%20Force%20Awakens-Final%20Script.pdf
-
-# https://sfy.ru/?script=mummy_1999
-
-# https://www.scriptslug.com/script/the-mummy-2017
-
-# https://www.dailyscript.com/scripts/RaidersoftheLostArk.pdf
-
-# http://www.cinefile.biz/script/indy4b.pdf
-
-# https://sfy.ru/?script=dune
-
-# https://www.scriptslug.com/script/dune-2021
-
 library(striprtf)
 
 # Read in two screenplays and make them lowercase
