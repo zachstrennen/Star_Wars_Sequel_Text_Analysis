@@ -1,4 +1,4 @@
-# Tokenize the script  
+# Tokenize the script   
 starwars4_tokens <- starwars4_txt %>%
   corpus() %>%
   tokens(remove_punct = TRUE, remove_symbols = TRUE, what = "word") %>%
